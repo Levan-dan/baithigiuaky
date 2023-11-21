@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #logo{
+            display: flex;
+            justify-content: center;
+        }
+        #logo img{
+            width: 150px;
+            height: 90px;
+        }
+
+        #header{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(56, 56, 112);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #header ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 0px 20px;
+            
+        }
+        #header button{
+            background-color: rgb(231, 161, 161);
+        }
+            
+        
+        #header ul li:hover a{
+            color: yellow;
+        }
+        #header li a{
+            text-decoration: none;
+            color: white;
+        }
+        #header form{
+            padding-right: 20px;
+        }
+
+        #quangcao img{
+            width: 100%;
+            margin-top: 5px;
+            padding: 0px;
+        }
+        #dacbiet{
+            margin-top: 15px;
+        }
+
+        #dacbiet a{
+            text-decoration: none;
+        }
+        #dacbiet a:hover{
+            color: red;
+        }
+        
+
+        #content{
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: 1fr 1fr 1fr;  
+            text-align: center;
+            gap: 20px;
+            
+        }
+        #sanpham{
+            border: 1px solid black;
+            width:98%;
+            height: 400px;
+            text-align: center;
+            box-shadow: 0px 0px 3px;
+        }
+        #sanpham p,img,h5{
+            padding-top: 20px;
+
+        }
+        
+
+        #footer{
+            width: 100%;
+            height: 50px;
+            background-color:rgb(56, 56, 112) ;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       #footer p{
+        color: white;
+       }
+
+       @media screen and (max-width:740px) {
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #logo{
+            display: flex;
+            justify-content: center;
+        }
+        #logo img{
+            width: 100px;
+            height: 40px;
+        }
+        #header input{
+            width: 120px;
+        }
+        #header button{
+            background-color: rgb(231, 161, 161);
+        }
+        #header{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(56, 56, 112);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #header ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin: 0px 10px;
+            
+        }
+        
+            
+        
+        #header ul li:hover a{
+            color:yellow;
+        }
+        #header li a{
+            font-size: 9px;
+            text-decoration: none;
+            color: white;
+        }
+        #header form{
+            padding-right: 10px;
+        }
+
+        #quangcao img{
+            width: 100%;
+            margin-top: 5px;
+            padding: 0px;
+        }
+        #dacbiet{
+            margin-top: 10px;
+        }
+
+        #dacbiet a{
+            text-decoration: none;
+        }
+        #dacbiet a:hover{
+            color: red;
+        }
+        
+
+        #content{
+            display: grid;
+            margin-top: 10px;
+            grid-template-columns: 1fr 1fr;  
+            text-align: center;
+            gap: 10px;
+            
+        }
+        #sanpham img{
+            width: 250px;
+        }
+        #sanpham{
+            border: 1px solid black;
+            width:98%;
+            height: 400px;
+            text-align: center;
+            box-shadow: 0px 0px 3px;
+        }
+        #sanpham p,img,h5{
+            padding-top: 20px;
+
+        }
+        
+
+        #footer{
+            width: 100%;
+            height: 50px;
+            background-color:rgb(56, 56, 112) ;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       #footer p{
+        color: white;
+       }
+       }
+       
+        
+    </style>
+</head>
+<body>
+    <div id="container-fluid">
+        <div id="logo">
+            <img src="anhthi4.png" alt="">
+        </div>
+
+        <div id="header">
+            <div id="danhsach">
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Giới thiệu </a></li>
+                    <li><a href="">Tuyển sinh</a></li>
+                    <li><a href="">Ngành đào tạo</a></li>
+                    <li><a href="">Sinh viên</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <input type="text" required>
+                <button>Tìm kiếm</button>
+            </form>
+        </div>
+
+        <div id="quangcao">
+            <img src="anhthi3.png" alt="">
+        </div>
+
+        <div id="dacbiet">
+            <a href="https://codegym.vn">HỌC PHÍ CHƯƠNG TRÌNH ĐÀO TẠO</a>
+        </div>
+        <br>
+   
+    <div id="content">
+        <div id="sanpham">
+           <h5>Công nghệ thông tin</h5>
+            <img src="anhthi2.png" alt="">
+            <p>5.600.000đ</p>
+        </div>
+        <div id="sanpham">
+            <h5>Kinh tế</h5>
+            <img src="anhthi2.png" alt="">
+            <p>5.600.000đ</p>
+        </div>
+        <div id="sanpham">
+            <h5>Điện tử viễn thông</h5>
+            <img src="anhthi2.png" alt="">
+            <p>5.600.000đ</p>
+        </div>
+        <div id="sanpham">
+            <h5>Quản trị kinh doanh</h5>
+            <img src="anhthi2.png" alt="">
+            <p>5.600.000đ</p>
+        </div>
+        <div id="sanpham">
+            <h5>Quản trị văn phòng</h5>
+            <img src="anhthi2.png" alt="">
+            <p>5.600.000đ</p>
+        </div>
+        <div id="sanpham">
+            <h5>Ngôn ngữ anh</h5>
+            <img src="anhthi2.png" alt="">
+            <p>5.600.000đ</p>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>LÊ VĂN DÂN-D101_C1K15</p>
+    </div>
+</body>
+</html>
